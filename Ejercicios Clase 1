@@ -1,0 +1,68 @@
+import numpy as np
+
+# Ejercicio 1: Crear un array de 10 elementos con ceros.
+
+array_10_ceros = np.zeros(10)
+print("Ejercicio 1:", array_10_ceros)
+
+# Ejercicio 2: Genera un array con los números del 1 al 20.
+
+array_num_1_al_20 = np.arange(1, 21)
+print("Ejercicio 2:", array_num_1_al_20)
+
+# Ejercicio 3: Crea un array con los números pares del 2 al 50.
+
+array_pares_2_al_50 = np.arange(2, 51, 2)
+print("Ejercicio 3:", array_pares_2_al_50)
+
+# Ejercicio 5: Crea una matriz de 4x4 con valores aleatorios entre 0 y 1.
+
+matriz_4x4_aleatorios_entre_0_y_1 = np.random.rand(4, 4)
+print("Ejercicio 5:\n", matriz_4x4_aleatorios_entre_0_y_1)
+
+# Ejercicio 6: Realiza la suma elemento a elemento de los arrays a=[1,2,3], b=[4,5,6].
+
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+suma = a + b
+print("Ejercicio 6:", suma)
+
+# Ejercicio 7: Multiplica dos matrices 3x3 de enteros aleatorios entre 1 y 10.
+
+matriz3x3_1 = np.random.randint(1, 11, (3, 3))
+matriz3x3_2 = np.random.randint(1, 11, (3, 3))
+
+producto_matriz3x3 = np.dot(matriz3x3_1, matriz3x3_2)
+print("Ejercicio 7 - Matriz 1:\n", matriz3x3_1)
+print("Ejercicio 7 - Matriz 2:\n", matriz3x3_2)
+print("Ejercicio 7 - Producto:\n", producto_matriz3x3)
+
+# Ejercicio 8: Crea un array de 15 valores aleatorios entre 1 y 100 e imprime su máximo, mínimo y promedio.
+
+array_15_aleatorios_entre_1_y_100 = np.random.randint(1, 101, 15)
+maximo = np.max(array_15_aleatorios_entre_1_y_100)
+minimo = np.min(array_15_aleatorios_entre_1_y_100)
+promedio = np.mean(array_15_aleatorios_entre_1_y_100)
+
+print("Ejercicio 8 - array:", array_15_aleatorios_entre_1_y_100)
+print("Ejercicio 8 - Máximo:", maximo)
+print("Ejercicio 8 - Mínimo:", minimo)
+print("Ejercicio 8 - Promedio:", promedio)
+
+# Ejercicio 9: Genera una matriz 5x5 con valores del 1 al 25 y extrae su diagonal.
+
+matriz_5x5_aleatorios_1_al_25 = np.arange(1, 26).reshape(5, 5)
+diagonal = np.diag(matriz_5x5_aleatorios_1_al_25)
+
+print("Ejercicio 9 - matriz:\n", matriz_5x5_aleatorios_1_al_25)
+print("Ejercicio 9 - Diagonal:", diagonal)
+
+# Ejercicio 10: Dada una matriz 5x5 de enteros aleatorios entre 1 y 20, calcula la suma de cada fila y columna.
+
+matriz_5x5_aleatorios_int_1_al_20 = np.random.randint(1, 21, (5, 5))
+suma_filas = matriz_5x5_aleatorios_int_1_al_20.sum(axis=1)
+suma_columnas = matriz_5x5_aleatorios_int_1_al_20.sum(axis=0)
+
+print("Ejercicio 10 - matriz:\n", matriz_5x5_aleatorios_int_1_al_20)
+print("Ejercicio 10 - Suma de filas:", suma_filas)
+print("Ejercicio 10 - Suma de columnas:", suma_columnas)
