@@ -1,1 +1,1 @@
-Archivos de Clase2
+Archivos de la Clase2
