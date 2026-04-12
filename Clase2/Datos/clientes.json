@@ -1,0 +1,20 @@
+[
+    {
+        "id_cliente": 1,
+        "nombre": "Juan Pérez",
+        "email": "juan@email.com",
+        "telefono": "123456789"
+    },
+    {
+        "id_cliente": 2,
+        "nombre": "María López",
+        "email": "maria@email.com",
+        "telefono": "987654321"
+    },
+    {
+        "id_cliente": 3,
+        "nombre": "Carlos Gómez",
+        "email": "carlos@email.com",
+        "telefono": "456123789"
+    }
+]
