@@ -1,4 +1,4 @@
-# Entrega 3: Presentación del Modelo y Análisis de Resultados
+# Entrega 3: Proyecto Southwave - Presentación del Modelo y Análisis de Resultados
 
 ## Clasificación de noches atmosféricas a partir de perfiles de temperatura obtenidos con LIDAR CORAL
 
@@ -8,9 +8,9 @@
 
 El presente trabajo tiene como objetivo aplicar técnicas de Aprendizaje Automático para analizar perfiles de temperatura atmosférica obtenidos mediante el sistema LIDAR CORAL, ubicado en la Estación Astronómica Río Grande.
 
-Desde el inicio del proyecto, el problema fue planteado como la necesidad de clasificar noches de observación de acuerdo con el estado de la atmósfera. Originalmente se proponía identificar distintos tipos de noches, tales como noches tranquilas, noches con fuertes ondas de montaña, estratopausa elevada, fuertes perturbaciones en la mesosfera superior, doble estratopausa con ondas de montaña en la estratósfera y noches con estructuras complejas, denominadas informalmente como “sopa de ondas”.
+Desde el inicio del proyecto, el propósito del trabajo era clasificar cada noche de observaciones de acuerdo al estado de la atmósfera. Originalmente se proponía identificar distintos tipos de noches, tales como noches tranquilas, con fuertes ondas de montaña, con estratopausa elevada, con fuertes perturbaciones en la mesósfera superior, con doble estratopausa con ondas de montaña en la estratósfera, noches con estructuras complejas, denominadas informalmente como “sopa de ondas”, con ondas de montaña confinadas en la estratósfera y con debilitación de las ondas hacia el verano austral.
 
-Luego, a partir del intercambio con el especialista, esta clasificación fue refinada hacia un conjunto de estados físicamente más acotado: noche tranquila, ondas de montaña en la estratósfera, ondas de montaña en la mesósfera, ondas de montaña presentes en ambas regiones, estratopausa elevada y doble estratopausa.
+Luego, a partir del intercambio con el especialista, esta clasificación fue refinada hacia un conjunto de estados físicamente más acotado: noche tranquila, ondas de montaña (en la estratósfera, en la mesósfera, o en ambas regiones), estratopausa elevada y doble estratopausa.
 
 Sin embargo, el dataset disponible no contaba con etiquetas previas que indicaran a qué tipo de estado atmosférico correspondía cada noche. Por ese motivo, el problema fue abordado como un caso de aprendizaje no supervisado. En lugar de entrenar un modelo para predecir una categoría conocida, se buscó identificar patrones dominantes en los perfiles de temperatura y luego analizar si esos patrones podían vincularse con los estados atmosféricos esperados.
 
@@ -54,9 +54,11 @@ Luego se analizaron los valores faltantes resultantes. Como parte del trabajo se
 | Dataset B | Imputación por mediana vertical | Evaluar una estrategia simple de imputación |
 | Dataset C | Imputación mediante KNN | Mantener la estructura de los perfiles considerando similitud entre observaciones |
 
-El Dataset C, generado mediante imputación KNN, fue utilizado como dataset principal para el clustering. De todos modos, el Dataset A se mantuvo como referencia de control para verificar que los patrones observados no dependieran exclusivamente del método de imputación.
+El Dataset C, generado mediante imputación KNN, fue seleccionado como mejor opción porque mantenía la estructura térmica general sin alterar significativamente la variabilidad de los perfiles, fue utilizado como dataset principal para el clustering. De todos modos, el Dataset A se mantuvo como referencia de control para verificar que los patrones observados no dependieran exclusivamente del método de imputación.
 
-El dataset final utilizado para el análisis incluyó 11.041 perfiles válidos, cada uno con información de temperatura en aproximadamente 650 niveles de altura dentro del rango 15–80 km.
+![Comparacion de estrategias de imputacion](AprendizajeAutomatico/Evaluacion Parcial/reports/figures/Comparacion de estrategias de imputacion.jpg)
+
+El dataset final (C) utilizado para el análisis incluyó 11.041 perfiles válidos, cada uno con información de temperatura en 650 niveles de altura dentro del rango 15–80 km.
 
 ---
 
