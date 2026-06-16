@@ -190,8 +190,7 @@ Se observa una mayor cantidad de perfiles por noche durante los meses de otoño 
 ![Cantidad de perfiles por noche 2022-2024](../reports/figures/Cantidaddeperfilespornoche2022-2025.jpg)
 
 
-![Perfiles promedio por noche según el mes](../reports/figures/Perfilespromediopornochesegunelmes
-.jpg)
+![Perfiles promedio por noche según el mes](../reports/figures/Perfilespromediopornochesegunelmes.jpg)
 
 
 ### 5.3 Estructura térmica de los perfiles
