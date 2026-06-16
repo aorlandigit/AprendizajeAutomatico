@@ -56,7 +56,7 @@ Luego se analizaron los valores faltantes resultantes. Como parte del trabajo se
 
 El Dataset C, generado mediante imputación KNN, fue seleccionado como mejor opción porque mantenía la estructura térmica general sin alterar significativamente la variabilidad de los perfiles, fue utilizado como dataset principal para el clustering. De todos modos, el Dataset A se mantuvo como referencia de control para verificar que los patrones observados no dependieran exclusivamente del método de imputación.
 
-![Comparacion de estrategias de imputacion](AprendizajeAutomatico/Evaluacion Parcial/reports/figures/Comparacion de estrategias de imputacion.jpg)
+![Comparacion de estrategias de imputacion](../reports/figures/Comparacion de estrategias de imputacion.jpg)
 
 El dataset final (C) utilizado para el análisis incluyó 11.041 perfiles válidos, cada uno con información de temperatura en 650 niveles de altura dentro del rango 15–80 km.
 
