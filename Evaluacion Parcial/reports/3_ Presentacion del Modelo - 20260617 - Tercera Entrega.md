@@ -475,16 +475,16 @@ Una posible validación adicional consiste en tomar noches de referencia propues
 
 La idea sería construir una tabla como la siguiente:
 
-| Fecha | Estado esperado | Cluster dominante | % dominante | Entropía | Interpretación |
+| Fecha | Estado esperado | Cluster dominante | % dominante |
 |---|---|---:|---:|---:|---|
-| 2022-02-01 | Noche tranquila | A completar | A completar | A completar | A completar |
-| 2022-09-10 | Fuertes ondas de montaña | A completar | A completar | A completar | A completar |
-| 2022-07-08 | Estratopausa elevada | A completar | A completar | A completar | A completar |
-| 2022-04-02 | Fuertes perturbaciones en la mesósfera superior | A completar | A completar | A completar | A completar |
-| 2022-05-03 | Doble estratopausa, con ondas de montaña en la estratósfera | A completar | A completar | A completar | A completar |
-| 2022-06-19 | Sopa de ondas | A completar | A completar | A completar | A completar |
-| 2022-10-25 | Ondas de montaña confinadas en la estratósfera | A completar | A completar | A completar | A completar |
-| 2022-11-08 | debilitación de las ondas hacia el verano austral | A completar | A completar | A completar | A completar |
+| 2022-02-01 | Noche tranquila | C2 | 100% |
+| 2022-09-10 | Fuertes ondas de montaña |  C1 | 100% |
+| 2022-07-08 | Estratopausa elevada | A completar |  C3 | 100% |
+| 2022-04-02 | Fuertes perturbaciones en la mesósfera superior | ND | ND |
+| 2022-05-03 | Doble estratopausa, con ondas de montaña en la estratósfera | ND | ND |
+| 2022-06-19 | Sopa de ondas | ND | ND |
+| 2022-10-25 | Ondas de montaña confinadas en la estratósfera | C2 | 100% | 
+| 2022-11-08 | debilitación de las ondas hacia el verano austral |  C2 | 100% |
 
 Esta validación no reemplaza a una evaluación supervisada, porque no se dispone de una base etiquetada completa. Sin embargo, permite contrastar el comportamiento del modelo con casos conocidos o esperados.
 
@@ -559,50 +559,6 @@ Luego, mediante la agregación por noche, fue posible avanzar hacia el objetivo 
 La comparación con los estados físicos esperados muestra que no existe una correspondencia directa garantizada entre clusters y categorías atmosféricas. Sin embargo, el modelo ofrece una base objetiva para seleccionar noches representativas y contrastarlas con la interpretación física del especialista.
 
 En síntesis, el modelo no cierra definitivamente la clasificación atmosférica, pero sí permite organizar las observaciones en estados térmicos dominantes. Este es un paso necesario para avanzar hacia una clasificación más física de noches tranquilas, noches con ondas de montaña, estratopausa elevada o doble estratopausa.
-
----
-
-## 16. Organización sugerida del repositorio GIT
-
-La entrega final debe incluir los archivos necesarios para reproducir el proceso realizado. Una organización posible es:
-
-```text
-Entrega_3/
-│
-├── data/
-│   ├── perfiles_limpios_2022_2024_15000_80000.csv
-│   ├── dataset_A_casos_completos.csv
-│   ├── dataset_B_mediana.csv
-│   ├── dataset_C_knn.csv
-│   ├── dataset_C_clusterizado_k2_k7_mes_estacion.csv
-│   └── resumen_nocturno_clusters.csv
-│
-├── notebooks/
-│   ├── Nb1_consolidacion_datos.ipynb
-│   ├── Nb3_limpieza_y_recorte.ipynb
-│   ├── Nb5_tratamiento_nan.ipynb
-│   ├── Nb6_clustering_perfiles.ipynb
-│   └── Nb7_noches_completas.ipynb
-│
-├── figures/
-│   ├── distribucion_perfiles_por_noche.png
-│   ├── perfiles_medios_datasets.png
-│   ├── metricas_kmeans.png
-│   ├── perfiles_representativos_clusters.png
-│   ├── distribucion_estacional_clusters.png
-│   ├── matriz_transicion_clusters.png
-│   └── evolucion_nocturna_ejemplos.png
-│
-├── docs/
-│   └── informe_entrega_3.md
-│
-├── video/
-│   └── presentacion_entrega_3.mp4
-│
-└── README.md
-```
-
-El archivo `README.md` debería explicar brevemente el objetivo del proyecto, la estructura del repositorio, los datasets incluidos y el orden recomendado para ejecutar los notebooks.
 
 ---
 
