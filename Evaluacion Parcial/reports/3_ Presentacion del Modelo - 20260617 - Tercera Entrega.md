@@ -477,11 +477,14 @@ La idea sería construir una tabla como la siguiente:
 
 | Fecha | Estado esperado | Cluster dominante | % dominante | Entropía | Interpretación |
 |---|---|---:|---:|---:|---|
-| A completar | Noche tranquila | A completar | A completar | A completar | A completar |
-| A completar | Ondas de montaña | A completar | A completar | A completar | A completar |
-| A completar | Estratopausa elevada | A completar | A completar | A completar | A completar |
-| A completar | Doble estratopausa | A completar | A completar | A completar | A completar |
-| A completar | Sopa de ondas | A completar | A completar | A completar | A completar |
+| 2022-02-01 | Noche tranquila | A completar | A completar | A completar | A completar |
+| 2022-09-10 | Fuertes ondas de montaña | A completar | A completar | A completar | A completar |
+| 2022-07-08 | Estratopausa elevada | A completar | A completar | A completar | A completar |
+| 2022-04-02 | Fuertes perturbaciones en la mesósfera superior | A completar | A completar | A completar | A completar |
+| 2022-05-03 | Doble estratopausa, con ondas de montaña en la estratósfera | A completar | A completar | A completar | A completar |
+| 2022-06-19 | Sopa de ondas | A completar | A completar | A completar | A completar |
+| 2022-10-25 | Ondas de montaña confinadas en la estratósfera | A completar | A completar | A completar | A completar |
+| 2022-11-08 | debilitación de las ondas hacia el verano austral | A completar | A completar | A completar | A completar |
 
 Esta validación no reemplaza a una evaluación supervisada, porque no se dispone de una base etiquetada completa. Sin embargo, permite contrastar el comportamiento del modelo con casos conocidos o esperados.
 
